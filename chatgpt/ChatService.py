@@ -57,7 +57,7 @@ class ChatService:
         self.fp = get_fp(self.req_token).copy()
         self.proxy_url = self.fp.pop("proxy_url", None)
         self.impersonate = self.fp.pop("impersonate", "safari15_3")
-        self.user_agent = self.fp.get("user-agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0")
+        self.user_agent = self.fp.get("user-agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36")
         logger.info(f"Request token: {self.req_token}")
         logger.info(f"Request proxy: {self.proxy_url}")
         logger.info(f"Request UA: {self.user_agent}")
